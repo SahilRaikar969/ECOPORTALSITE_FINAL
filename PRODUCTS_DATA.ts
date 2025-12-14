@@ -37,7 +37,7 @@ export const PRODUCTS_DATA = [
     id: 'steel-bottle',
     title: 'Steel Water Bottle',
     image: '/images/steel-bottle.jpg',
-    cost: 450,
+    cost: 200,
     features: [
       'Reusable for years.',
       'Eliminates plastic bottles.',

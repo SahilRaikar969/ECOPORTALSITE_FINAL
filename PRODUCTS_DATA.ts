@@ -3,7 +3,7 @@ export const PRODUCTS_DATA = [
     id: 'cloth-bag',
     title: 'Cloth Bag',
     image: '/images/bag.jpg',
-    cost: 30,
+    cost: 25,
     features: [
       'Reusable 50–70 times, replacing single-use plastic bags.',
       'Lower carbon footprint, earning higher EcoPoints.',
@@ -30,14 +30,45 @@ export const PRODUCTS_DATA = [
       { id: 'cb-3', name: 'Transportation', conventionalValue: 20, ecoValue: 9, insight: 'Local sourcing reduces logistics emissions.' },
       { id: 'cb-4', name: 'Usage Phase', conventionalValue: 15, ecoValue: 4, insight: 'Multiple reuses eliminate repeated production.' },
       { id: 'cb-5', name: 'End of Life', conventionalValue: 25, ecoValue: 8, insight: 'Biodegradable disposal avoids microplastic pollution.' }
-    ]
+    ],
+    marketAlternatives: {
+      conventionalName: 'Plastic Bag',
+      ecoName: 'Cloth Bag',
+      comparison: [
+        {
+          aspect: 'CO₂ Emissions',
+          conventional: 'Very high CO₂ emissions during production',
+          eco: 'Low CO₂ emissions due to repeated reuse'
+        },
+        {
+          aspect: 'EcoPoints Earned',
+          conventional: 'Very low EcoPoints per scan',
+          eco: 'High EcoPoints because of low environmental impact'
+        },
+        {
+          aspect: 'Durability',
+          conventional: 'Single-use, tears easily',
+          eco: 'Reusable 50–70 times'
+        },
+        {
+          aspect: 'Cost Over Time',
+          conventional: 'Repeated purchases increase total cost',
+          eco: 'One-time cost recovered through long-term use'
+        },
+        {
+          aspect: 'Environmental Impact',
+          conventional: 'Adds to plastic pollution and landfill waste',
+          eco: 'Significantly reduces plastic waste'
+        }
+      ]
+    }
   },
 
   {
     id: 'steel-bottle',
     title: 'Steel Water Bottle',
     image: '/images/steel-bottle.jpg',
-    cost: 250,
+    cost: 230,
     features: [
       'Reusable for years.',
       'Eliminates plastic bottles.',
@@ -70,13 +101,13 @@ export const PRODUCTS_DATA = [
     id: 'wooden-ruler',
     title: 'Wooden Ruler',
     image: '/images/ruler.jpg',
-    cost: 40,
+    cost: 25,
     features: [
       'Made from natural, renewable wood, not plastic or chemicals.',
-'Lower CO₂ emissions → more EcoPoints whenever purchased.',
-'Sturdy and long-lasting, does not crack easily like plastic scales.',
-'Safe for children, no sharp edges or harmful materials.',
-'Cost recovered through durability + EcoPoints, making it cheaper in the long run'
+      'Lower CO₂ emissions → more EcoPoints whenever purchased.',
+      'Sturdy and long-lasting, does not crack easily like plastic scales.',
+      'Safe for children, no sharp edges or harmful materials.',
+      'Cost recovered through durability + EcoPoints, making it cheaper in the long run'
     ],
     chartData: [
       { name: 'Raw Material', Conventional: 30, EcoFriendly: 12 },
@@ -106,12 +137,11 @@ export const PRODUCTS_DATA = [
     image: '/images/plastic-ruler.jpg',
     cost: 20,
     features: [
-     'Cheap initially, but breaks easily, requiring frequent repurchase.',
-'Higher CO₂ footprint, so EcoPoints earned are very low.',
-'Made from non-biodegradable plastic, adding to landfill waste',
-'Can bend, warp, or crack under pressure',
-'No long-term value, because cost is repeated + very low reward return.'
-
+      'Cheap initially, but breaks easily, requiring frequent repurchase.',
+      'Higher CO₂ footprint, so EcoPoints earned are very low.',
+      'Made from non-biodegradable plastic, adding to landfill waste',
+      'Can bend, warp, or crack under pressure',
+      'No long-term value, because cost is repeated + very low reward return.'
     ],
     chartData: [
       { name: 'Raw Material', Conventional: 45, EcoFriendly: 45 },
